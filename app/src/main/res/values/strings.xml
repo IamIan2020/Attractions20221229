@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">臺北旅遊網</string>
+    <string name="action_language">語系</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="attractions_all_fragment_label">臺北旅遊網</string>
+
+    <string name="detail_open_time">開館時間</string>
+    <string name="detail_address">地址</string>
+    <string name="detail_latest_Update">最後更新</string>
+    <string name="detail_url">![CDATA[<u>%1s</u>]]</string>
+
+    <string name="image">Image</string>
+    <string-array name="language_list">
+        <item >繁體中文</item>
+        <item >簡體中文</item>
+        <item>English</item>
+        <item>JA</item>
+        <item >KO</item>
+        <item >ES</item>
+        <item >ID</item>
+        <item >TH</item>
+        <item >VI</item>
+    </string-array>
+
+    <string-array name="language_code">
+        <item >zh-tw</item>
+        <item >zh-cn</item>
+        <item>en</item>
+        <item>ja</item>
+        <item >ko</item>
+        <item >es</item>
+        <item >id</item>
+        <item >th</item>
+        <item >vi</item>
+    </string-array>
+</resources>

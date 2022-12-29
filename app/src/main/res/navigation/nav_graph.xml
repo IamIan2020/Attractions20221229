@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/AttractionsAllFragment">
+
+    <fragment
+        android:id="@+id/AttractionsAllFragment"
+        android:name="com.taipei.attractions.views.all.AttractionsAllFragment"
+        android:label="@string/attractions_all_fragment_label"
+        tools:layout="@layout/fragment_attractions_all">
+
+        <action
+            android:id="@+id/action_AttractionsFragment_to_AttractionDetailFragment"
+            app:destination="@id/AttractionsDetailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/AttractionsDetailFragment"
+        android:name="com.taipei.attractions.views.detail.AttractionsDetailFragment"
+        tools:layout="@layout/fragment_attractionl_detail"
+        android:label="{title_name}">
+
+        <argument
+            android:name="detailDataA"
+            app:argType="com.taipei.attractions.model.AttractionsAllModel$Data" />
+
+        <argument
+            android:name="title_name"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_AttractionsDetailFragment_to_AttractionsWebViewFragment"
+            app:destination="@id/AttractionsWebViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AttractionsWebViewFragment"
+        android:name="com.taipei.attractions.views.AttractionsWebViewFragment"
+        tools:layout="@layout/fragment_web_view"
+        android:label="{titleName}">
+
+        <argument
+            android:name="url_string"
+            app:argType="string" />
+
+        <argument
+            android:name="titleName"
+            app:argType="string" />
+    </fragment>
+</navigation>
